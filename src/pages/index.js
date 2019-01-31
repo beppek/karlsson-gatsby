@@ -5,6 +5,8 @@ import Layout from '../components/layout';
 import Image from '../components/image';
 import SEO from '../components/seo';
 
+import Menu from './home/Menu';
+
 import logo from '../images/code.svg';
 
 const IndexPage = () => (
@@ -22,8 +24,10 @@ const IndexPage = () => (
         'javascript',
       ]}
     />
-    <Link to="/blog">Blog</Link>
-    <Link to="/portfolio">Portfolio</Link>
+    <Menu>
+      <Link to="/blog">Blog</Link>
+      <Link to="/portfolio">Portfolio</Link>
+    </Menu>
   </Layout>
 );
 

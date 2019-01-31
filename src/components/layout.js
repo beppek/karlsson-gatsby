@@ -84,9 +84,9 @@ const Layout = ({ children }) => {
               blog={blog}
             />
             <InnerWrapper blog={blog} homePage={homePage}>
-              {!homePage && !blog && (
+              {/* {!homePage && !blog && (
                 <Header siteTitle={data.site.siteMetadata.title} />
-              )}
+              )} */}
               <div
                 style={{
                   margin: `0 auto`,

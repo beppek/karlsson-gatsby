@@ -9,7 +9,7 @@ const InnerWrapper = styled.div`
   border-radius: ${props => (props.blog ? '0' : '5px')};
   box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.23);
   background-color: ${props =>
-    props.homePage ? 'rgb(25,25,25,0.8)' : 'rgb(200,200,200,0.85)'};
+    props.blog ? 'rgb(200,200,200,0.85)' : 'rgb(25,25,25,0.8)'};
   color: #f0f0f0;
   z-index: 2;
 `;
