@@ -9,7 +9,11 @@ import Header from './header';
 import Footer from './Footer';
 import './layout.css';
 
-const Layout = ({ children }) => {
+interface LayoutProps {
+  children: Array<JSX.Element>;
+}
+
+const Layout = ({ children }: LayoutProps) => {
   const homePage = window.location.pathname === '/';
   const blog = window.location.pathname.includes('/blog');
   return (
@@ -80,10 +84,9 @@ const Layout = ({ children }) => {
             <BackgroundImageBlur
               landscape={landscape}
               portrait={portrait}
-              homePage={homePage}
               blog={blog}
             />
-            <InnerWrapper blog={blog} homePage={homePage}>
+            <InnerWrapper blog={blog}>
               {/* {!homePage && !blog && (
                 <Header siteTitle={data.site.siteMetadata.title} />
               )} */}

@@ -2,7 +2,11 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-const Header = ({ siteTitle }) => (
+interface HeaderProps {
+  siteTitle: String;
+}
+
+const Header = ({ siteTitle }: HeaderProps) => (
   <div
     style={{
       background: `#063E6C`,

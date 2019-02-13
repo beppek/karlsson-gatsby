@@ -3,7 +3,11 @@ import React from 'react';
 import MenuWrapper from './MenuWrapper';
 import MenuBorder from './MenuBorder';
 
-const Menu = props => {
+interface MenuProps {
+  children: Array<JSX.Element>;
+}
+
+const Menu = (props: MenuProps) => {
   return (
     <MenuWrapper>
       <MenuBorder />
